@@ -1,0 +1,29 @@
+source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
+use_frameworks!
+inhibit_all_warnings!
+
+target 'Assistant_New' do
+  pod 'AFNetworking'
+  pod 'IQKeyboardManagerSwift'
+  pod 'HandyJSON'
+  pod 'MJRefresh'
+  pod 'MBProgressHUD', '~>1.1.0'
+end
+
+# Swift 版本声明
+post_install do |installer|
+    installer.pods_project.targets.each do |target|
+        if ['AFNetworking', 'IQKeyboardManagerSwift','HandyJSON','MJRefresh','MBProgressHUD'].include? target.name
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '3.3'
+                config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
+            end
+            else
+            target.build_configurations.each do |config|
+                config.build_settings['SWIFT_VERSION'] = '4.1'
+                config.build_settings['ONLY_ACTIVE_ARCH'] = 'NO'
+            end
+        end
+    end
+end

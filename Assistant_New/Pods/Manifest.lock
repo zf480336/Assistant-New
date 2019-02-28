@@ -1,0 +1,46 @@
+PODS:
+  - AFNetworking (3.2.1):
+    - AFNetworking/NSURLSession (= 3.2.1)
+    - AFNetworking/Reachability (= 3.2.1)
+    - AFNetworking/Security (= 3.2.1)
+    - AFNetworking/Serialization (= 3.2.1)
+    - AFNetworking/UIKit (= 3.2.1)
+  - AFNetworking/NSURLSession (3.2.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.2.1)
+  - AFNetworking/Security (3.2.1)
+  - AFNetworking/Serialization (3.2.1)
+  - AFNetworking/UIKit (3.2.1):
+    - AFNetworking/NSURLSession
+  - HandyJSON (4.2.1)
+  - IQKeyboardManagerSwift (6.2.0)
+  - MBProgressHUD (1.1.0)
+  - MJRefresh (3.1.15.7)
+
+DEPENDENCIES:
+  - AFNetworking
+  - HandyJSON
+  - IQKeyboardManagerSwift
+  - MBProgressHUD (~> 1.1.0)
+  - MJRefresh
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - AFNetworking
+    - HandyJSON
+    - IQKeyboardManagerSwift
+    - MBProgressHUD
+    - MJRefresh
+
+SPEC CHECKSUMS:
+  AFNetworking: b6f891fdfaed196b46c7a83cf209e09697b94057
+  HandyJSON: d0c5fc80204f29056d59d3e5c4587fa0b16b60a8
+  IQKeyboardManagerSwift: b07ccf9d8cafe993dcd6cb794eb4ba34611a0c4e
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+
+PODFILE CHECKSUM: ca38ed96e714c4bd4ed941ca8fc56d83fecee950
+
+COCOAPODS: 1.5.3

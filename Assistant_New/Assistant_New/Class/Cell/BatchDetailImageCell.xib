@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BatchDetailImageCell" rowHeight="104" id="KGk-i7-Jjw" customClass="BatchDetailImageCell" customModule="Assistant" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="322" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="322" height="103.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CNF-89-Jwj">
+                        <rect key="frame" x="0.0" y="0.0" width="322" height="104.5"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcZ-Xr-ODb">
+                                <rect key="frame" x="15" y="8.5" width="88" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LcZ-Xr-ODb" secondAttribute="height" multiplier="1:1" id="Un4-3H-Q2P"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="icon_imageup"/>
+                                <connections>
+                                    <action selector="pressFirstBrn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="kRl-21-yfR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOS-GZ-Epf">
+                                <rect key="frame" x="118" y="8.5" width="88" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="DOS-GZ-Epf" secondAttribute="height" multiplier="1:1" id="Igd-fb-jYg"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="icon_imageup"/>
+                                <connections>
+                                    <action selector="pressSecondBrn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="47e-gO-ZT2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jKx-4k-qe8">
+                                <rect key="frame" x="221" y="8.5" width="88" height="88"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="jKx-4k-qe8" secondAttribute="height" multiplier="1:1" id="OMU-Iq-83t"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="icon_imageup"/>
+                                <connections>
+                                    <action selector="pressThreeBrn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="uVt-LR-NZE"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8iA-gV-bgP">
+                                <rect key="frame" x="77" y="8.5" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="26" id="FN8-ny-HA0"/>
+                                    <constraint firstAttribute="width" constant="26" id="IRE-IA-PPK"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="iconfont-shanchu-1"/>
+                                <connections>
+                                    <action selector="pressDeleteBtn1:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0mZ-Wy-4iu"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WdN-Zj-VI8">
+                                <rect key="frame" x="180" y="8.5" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="oEI-ou-Dno"/>
+                                    <constraint firstAttribute="height" constant="26" id="uT0-fd-hpQ"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="iconfont-shanchu-1"/>
+                                <connections>
+                                    <action selector="pressDeleteBtn2:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="3o4-FJ-t09"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F5f-Uv-udK">
+                                <rect key="frame" x="283" y="8.5" width="26" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="26" id="4h0-TP-aVD"/>
+                                    <constraint firstAttribute="height" constant="26" id="Z2R-dh-0h5"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="iconfont-shanchu-1"/>
+                                <connections>
+                                    <action selector="pressDeleteBtn3:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="u5b-Vy-7Nk"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="DOS-GZ-Epf" firstAttribute="leading" secondItem="LcZ-Xr-ODb" secondAttribute="trailing" constant="15" id="04V-xe-DoN"/>
+                            <constraint firstItem="8iA-gV-bgP" firstAttribute="trailing" secondItem="LcZ-Xr-ODb" secondAttribute="trailing" id="1Up-qq-iZA"/>
+                            <constraint firstItem="jKx-4k-qe8" firstAttribute="leading" secondItem="DOS-GZ-Epf" secondAttribute="trailing" constant="15" id="3Nk-as-uQC"/>
+                            <constraint firstItem="WdN-Zj-VI8" firstAttribute="top" secondItem="DOS-GZ-Epf" secondAttribute="top" id="4Yd-5Y-alh"/>
+                            <constraint firstItem="WdN-Zj-VI8" firstAttribute="trailing" secondItem="DOS-GZ-Epf" secondAttribute="trailing" id="5Ib-et-lop"/>
+                            <constraint firstAttribute="bottom" secondItem="LcZ-Xr-ODb" secondAttribute="bottom" constant="8" id="79T-Aa-0h7"/>
+                            <constraint firstItem="DOS-GZ-Epf" firstAttribute="top" secondItem="CNF-89-Jwj" secondAttribute="top" constant="8" id="GVx-gx-cZE"/>
+                            <constraint firstItem="LcZ-Xr-ODb" firstAttribute="leading" secondItem="CNF-89-Jwj" secondAttribute="leading" constant="15" id="I0M-x0-HZ2"/>
+                            <constraint firstItem="F5f-Uv-udK" firstAttribute="top" secondItem="jKx-4k-qe8" secondAttribute="top" id="XiH-4F-zk8"/>
+                            <constraint firstItem="LcZ-Xr-ODb" firstAttribute="width" secondItem="DOS-GZ-Epf" secondAttribute="width" id="fUZ-QP-hUc"/>
+                            <constraint firstItem="F5f-Uv-udK" firstAttribute="trailing" secondItem="jKx-4k-qe8" secondAttribute="trailing" id="gJX-rB-qE1"/>
+                            <constraint firstItem="DOS-GZ-Epf" firstAttribute="width" secondItem="jKx-4k-qe8" secondAttribute="width" id="p6D-XA-2if"/>
+                            <constraint firstAttribute="trailing" secondItem="jKx-4k-qe8" secondAttribute="trailing" constant="15" id="po0-5E-n89"/>
+                            <constraint firstItem="8iA-gV-bgP" firstAttribute="top" secondItem="LcZ-Xr-ODb" secondAttribute="top" id="u6v-J8-4Ge"/>
+                            <constraint firstItem="LcZ-Xr-ODb" firstAttribute="top" secondItem="CNF-89-Jwj" secondAttribute="top" constant="8" id="uSq-Xw-n5w"/>
+                            <constraint firstItem="jKx-4k-qe8" firstAttribute="top" secondItem="CNF-89-Jwj" secondAttribute="top" constant="8" id="wkO-2A-hQe"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CNF-89-Jwj" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="1dR-LY-gEf"/>
+                    <constraint firstAttribute="bottom" secondItem="CNF-89-Jwj" secondAttribute="bottom" id="Q0c-Wn-LQs"/>
+                    <constraint firstItem="CNF-89-Jwj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cWM-WX-2ha"/>
+                    <constraint firstAttribute="trailing" secondItem="CNF-89-Jwj" secondAttribute="trailing" id="ppC-e3-XMb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="buttonOne" destination="LcZ-Xr-ODb" id="dh0-Kp-jzV"/>
+                <outlet property="buttonThree" destination="jKx-4k-qe8" id="O2F-QK-N8n"/>
+                <outlet property="buttonTwo" destination="DOS-GZ-Epf" id="HaW-iv-eGq"/>
+                <outlet property="deleteBtn1" destination="8iA-gV-bgP" id="EPN-n0-QLb"/>
+                <outlet property="deleteBtn2" destination="WdN-Zj-VI8" id="T39-p8-XNS"/>
+                <outlet property="deleteBtn3" destination="F5f-Uv-udK" id="Qyd-7K-vg4"/>
+            </connections>
+            <point key="canvasLocation" x="-203" y="62"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icon_imageup" width="88" height="88"/>
+        <image name="iconfont-shanchu-1" width="13" height="13"/>
+    </resources>
+</document>
